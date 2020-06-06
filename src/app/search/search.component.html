@@ -1,0 +1,10 @@
+<div class="input-group">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button" (click)="submit()"><i class="icon-search"></i></button>
+    <select class="custom-select" (change)="setSelectParameter($event)">
+      <option value="0" selected>Filmy</option>
+      <option value="1">Seriale</option>
+    </select>
+  </div>
+  <input type="text" class="form-control" placeholder="" [value]="searchInput" aria-describedby="basic-addon1" (keyup)="setInputValue($event)" (keypress)="onKeyPress($event)">
+</div>

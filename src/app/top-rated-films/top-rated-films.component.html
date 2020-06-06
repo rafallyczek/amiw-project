@@ -1,0 +1,17 @@
+<button *ngIf="show" class="scrollup" (click)="scrollUp()"><i class="icon-up-open"></i></button>
+<div class="list">
+  <div class="row" id="film">
+    <h2>Najlepsze filmy</h2>
+  </div>
+  <div *ngFor="let film of films; let i = index" id="film" class="row">   
+    <div class="col-4">
+      <img src="http://image.tmdb.org/t/p/w300{{film.poster_path}}">
+    </div>
+    <div class="col-8">
+      <h2>{{film.title}}</h2>
+      <p>{{film.overview}}</p>
+      <p><b>Data premiery:</b> {{film.release_date}}</p>
+      <p><b>Średnia ocen:</b> {{film.vote_average}}</p>
+    </div>    
+  </div>
+</div>

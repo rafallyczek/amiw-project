@@ -1,0 +1,21 @@
+.custom-select{
+    border-radius: 0;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    background: #fff;
+}
+.custom-select:focus{
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+}
+.form-control:focus{
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+}
+.btn-outline-secondary:focus{
+    border-color: #6c757d;
+    outline: 0;
+    box-shadow: none;
+}

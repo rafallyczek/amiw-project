@@ -1,0 +1,17 @@
+<button *ngIf="show" class="scrollup" (click)="scrollUp()"><i class="icon-up-open"></i></button>
+<div class="list">
+  <div class="row" id="film">
+    <h2>Wyszukane seriale</h2>
+  </div>
+  <div *ngFor="let show of tvShows; let i = index" id="film" class="row">
+    <div class="col-4">
+      <img src="http://image.tmdb.org/t/p/w300{{show.poster_path}}" alt="Nie znaleziono plakatu.">
+    </div>
+    <div class="col-8">
+      <h2>{{show.name}}</h2>
+      <p>{{show.overview}}</p>
+      <p><b>Data premiery:</b> {{show.first_air_date}}</p>
+      <p><b>Średnia ocen:</b> {{show.vote_average}}</p>
+    </div>
+  </div>
+</div>
