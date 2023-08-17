@@ -17,7 +17,7 @@ export class SearchedTvSeriesComponent implements OnInit {
     });
    }
 
-  private tvShows;
+  tvShows;
   show: boolean;
 
   ngOnInit() {

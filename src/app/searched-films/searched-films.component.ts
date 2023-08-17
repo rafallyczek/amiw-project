@@ -17,7 +17,7 @@ export class SearchedFilmsComponent implements OnInit {
     });
   }
 
-  private films;
+  films;
   show: boolean;
 
   ngOnInit() {

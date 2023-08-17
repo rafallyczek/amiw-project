@@ -8,7 +8,7 @@ export class TmdbApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  private api_key: string = "Your API key goes here";
+  private api_key: string = ""; //Put your TMDb API key here (to get the key register on TMDb API website)
   private query: string = "";
 
   //Pobierz najpopularniejsze filmy

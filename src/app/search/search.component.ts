@@ -11,7 +11,7 @@ export class SearchComponent implements OnInit {
 
   constructor(private tmdbApiService: TmdbApiService, private router: Router) { }
 
-  private searchInput: string = "";
+  searchInput: string = "";
   private select: number = 0;
 
   ngOnInit() {}

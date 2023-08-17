@@ -10,7 +10,7 @@ export class TopRatedFilmsComponent implements OnInit {
 
   constructor(private tmdbApiService: TmdbApiService) { }
 
-  private films;
+  films;
   show: boolean;
 
   ngOnInit() {

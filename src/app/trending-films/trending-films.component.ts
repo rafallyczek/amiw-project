@@ -11,9 +11,9 @@ export class TrendingFilmsComponent implements OnInit {
 
   constructor(private tmdbApiService: TmdbApiService, private route: ActivatedRoute) { }
 
-  private films;
-  private show: boolean;
-  private timeString: string;
+  films;
+  show: boolean;
+  timeString: string;
 
   ngOnInit() {
     this.route.data.subscribe(data => {
