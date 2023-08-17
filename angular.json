@@ -147,8 +147,8 @@
           }
         }
       }
-    }},
-  "defaultProject": "amiw-project",
+    }
+  },
   "cli": {
     "analytics": "d142d8e1-d6bd-4b60-9f54-350866a39fd7"
   }
